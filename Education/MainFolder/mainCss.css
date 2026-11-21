@@ -1,0 +1,723 @@
+/* [    Main    ] */
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+
+    overflow-x: hidden;
+}
+
+span {
+    font-size: var(--span-size, 1rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    width: var(--width, auto);
+    height: var(--height, auto);
+
+    text-decoration: none;
+}
+
+iframe {
+    border-width: 0px 0px 0px 0px;
+    border-color: transparent;
+    width: var(--iframe-width, 100px);
+    height: var(--iframe-height, 100px);
+}
+
+p {
+    margin: 0px;
+
+    width: var(--width, 100%);
+    height: var(--height, 100%);
+    text-align: var(--text-align, center);
+    font-size: var(--p-size, 1rem);
+    white-space: pre-line;
+}
+
+svg {
+    width: var(--width, 100px);
+    height: var(--height, 100px);
+
+    transform: translate(var(--transform-x, 0px), var(--transform-y, 0px));
+}
+
+option {
+    font-size: var(--font-size,auto);
+}
+
+/*  [[[     BUTTONS     ]]]*/
+
+/*  BUTTONS STYLES  */
+.buttonText {
+    appearance: none;
+
+    background-color: var(--background-color, transparent);
+    color: var(--color, #000000);
+    border: none;
+    border-radius: 10%;
+    width: var(--btn-width, 100px);
+    height: var(--btn-height, 50px);
+
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size, 1rem);
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 1s ease-out,
+        color 1s ease-out,
+        transform 3s ease-out;
+}
+
+.buttonBorderLines {
+    appearance: none;
+
+    background-color: var(--background-color, transparent);
+    color: var(--color, #000000);
+
+    border-width: var(--border-width, 2px 2px 2px 2px);
+    border-style: var(--border-style, solid);
+    border-color: var(--border-color, #000000);
+    border-radius: 5%;
+
+    width: var(--btn-width, 100px);
+    height: var(--btn-height, 50px);
+
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size, 1rem);
+    font-weight: normal;
+
+    cursor: pointer;
+
+    transition:
+        background-color 1s ease-out,
+        color 1s ease-out,
+        transform 3s ease-out;
+}
+
+
+.buttonElegant {
+    appearance: none;
+
+    width: var(--btn-width,50%);
+    height: var(--btn-height,50%);
+
+    background-color: var(--btn-background, transparent);
+    color: var(--btn-color, #A8B5D1);
+
+    border: none;
+    border-radius: var(--btn-radius, 70px);
+
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size, 0.99rem);
+    font-weight: var(--font-weight, bold);
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 18px 20px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.2s ease;
+}
+
+/* Cuando pasamos el cursor */
+.buttonElegant:hover {
+    background-color: #19251F;
+    color: #c2f33b;
+}
+
+/* Cuando presionamos el botón */
+.buttonElegant:active {
+    transform: scale(0.97);
+}
+
+/* Cuando el apartado está seleccionado */
+.buttonElegant.active {
+    background-color: #1B2926;
+    color: #c2f33b;
+}
+
+
+
+/*  BUTTON HOVERS   */
+.hoverColor:hover {
+    color: var(--hover-color, var(--color, #000000));
+}
+
+.hoverBackgroundColor:hover {
+    background-color: var(--hoverBackground-color, var(--background-color, transparent));
+}
+
+/*  BUTTON ACTIVE   */
+.ActiveScale:active {
+    transform: scale(var(--scale-to, 0));
+}
+
+/*  [[[     SELECTS     ]]]*/
+.selectText {
+    appearance: none;
+
+    width: var(--width, 100%);
+    height: var(--height, 50%);
+
+    background-image: url("Arrow.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: var(--background-color, transparent);
+    color: var(--color, #000000);
+
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size, 1rem);
+    font-weight: normal;
+
+    border: none;
+    text-align: center;
+}
+
+.selectBorderLines {
+    appearance: none;
+
+    width: var(--width, 100%);
+    height: var(--height, 50%);
+
+    background-image: url("Arrow.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: var(--background-color, transparent);
+    color: var(--color, #000000);
+
+    border-width: var(--border-width, 2px 2px 2px 2px);
+    border-style: var(--border-style, solid);
+    border-color: var(--border-color, #000000);
+    border-radius: var(--border-radius, 5%);
+
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size, 1rem);
+    font-weight: normal;
+
+    text-align: center;
+}
+
+.selectElegant {
+    appearance: none;
+
+    width: var(--select-width,50%);
+    height: var(--select-height,50%);
+
+    background-image: url("ArrowDownWhite.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: var(--btn-background, transparent);
+    color: var(--btn-color, #A8B5D1);
+
+    border-color: #ffffff;
+    border-radius: var(--btn-radius, 70px);
+
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size, 0.99rem);
+    font-weight: var(--font-weight, bold);
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 18px 20px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.2s ease;
+}
+
+/*  [[[     TEXTS       ]]]*/
+.textText {
+    appearance: none;
+
+    width: var(--width, 100%);
+    height: var(--height, 50%);
+    resize: none;
+
+    background-color: var(--background-color, transparent);
+    color: var(--color, #000000);
+
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size, 1rem);
+    font-weight: normal;
+
+    border: none;
+    text-align: center;
+}
+
+/*  [[[     DIVS        ]]]*/
+.div {
+    display: flex;
+    flex-direction: var(--div-direction, column);
+    flex-wrap: var(--div-wrap, wrap);
+
+    width: var(--div-width, 200px);
+    height: var(--div-height, auto);
+
+    background-color: var(--div-background-color, transparent);
+
+    align-items: var(--div-alignItems, center);
+    justify-content: var(--div-justifyContent, none);
+
+    overflow-y: var(--overflow-y, hidden);
+    overflow-x: hidden;
+}
+
+
+/*  [[[     TABLES      ]]]*/
+.tableStyle01 {
+    width: var(--table-width, 100%);
+    height: var(--table-height, 100%);
+
+    table-layout: fixed;
+
+    border: var(--border, 1px solid black);
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: var(--background-color, transparent);
+
+    font-family: Arial;
+}
+
+.tableStyle01 th {
+    width: calc(100% / var(--columns, 1));
+    background-color: var(--th-background-color, --background-color);
+    color: blueviolet;
+
+    border: var(--th-border, var(--border, 1px solid black));
+    border-left: none;
+    border-right: none;
+
+    padding: var(--th-padding, var(--padding, none));
+
+    font-family: Courier;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tableStyle01 td {
+    background-color: var(--td-background-color, --background-color);
+    color: var(--color, black);
+
+    border: var(--td-border, var(--border, 1px solid black));
+
+    padding: var(--td-padding, var(--padding, none));
+
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+/*  [[[     SPANS      ]]]*/
+.spanStyle01 {
+    box-sizing: border-box;
+    width: 150px;
+    height: 50px;
+
+    background: #6ca372;
+    border-radius: 50px;
+
+    align-content: center;
+    text-align: left;
+    padding-left: 5%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    
+    color: #ffffff;
+}
+
+/*  [[[     EXTRAS     ]]]*/
+.textNeon {
+    text-shadow: 0px 0px 1px var(--neon-color, black);
+}
+
+.shadow {
+    box-shadow: var(--shadow, 0px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-aspect-ratio: 1/1) {
+    html {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+
+        overflow-x: hidden;
+    }
+
+    span {
+        font-size: var(--span-size, 1rem);
+        text-align: center;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+        line-height: 1; /* Opcional, pero recomendado si quieres espacio ajustado */
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    a {
+        width: var(--Cwidth, auto);
+        height: var(--Cheight, auto);
+
+        text-decoration: none;
+    }
+
+    iframe {
+        border-width: 0px 0px 0px 0px;
+        border-color: transparent;
+        width: var(--iframe-Cwidth, 100px);
+        height: var(--iframe-Cheight, 100px);
+    }
+
+    p {
+        margin: 0px;
+
+        width: var(--Cwidth, 100%);
+        height: var(--Cheight, 100%);
+        text-align: var(--text-align, center);
+        font-size: var(--p-size, 1rem);
+    }
+    
+    svg {
+        width: var(--Cwidth, var(--width, 100px));
+        height: var(--Cheight, var(--height, 100px));
+
+        transform: translate(var(--Ctransform-x, 0px), var(--Ctransform-y, 0px));
+    }
+
+    option {
+        font-size: var(--font-Csize,auto);
+    }
+
+    /*  [[[     BUTTONS     ]]]*/
+
+    /*  BUTTONS STYLES  */
+    .buttonText {
+        appearance: none;
+
+        background-color: var(--background-color, transparent);
+        color: var(--color, #000000);
+        border: none;
+        border-radius: 10%;
+        width: var(--btn-Cwidth, 50px);
+        height: var(--btn-Cheight, 100px);
+        max-width: 100%;
+        max-height: 100%;
+
+        font-family: Arial, sans-serif;
+        font-size: var(--font-size, 1rem);
+        font-weight: bold;
+
+        cursor: pointer;
+
+        transition:
+            background-color 1s ease-out,
+            color 1s ease-out,
+            transform 3s ease-out;
+    }
+
+    .buttonBorderLines {
+        appearance: none;
+
+        background-color: var(--background-color, transparent);
+        color: var(--color, #000000);
+
+        border-width: var(--border-width, 2px 2px 2px 2px);
+        border-style: var(--border-style, solid);
+        border-color: var(--border-color, #000000);
+        border-radius: 5%;
+
+        width: var(--btn-Cwidth, 50px);
+        height: var(--btn-Cheight, 100px);
+        max-width: 100%;
+        max-height: 100%;
+
+        font-family: Arial, sans-serif;
+        font-size: var(--font-size, 1rem);
+        font-weight: normal;
+
+        cursor: pointer;
+
+        transition:
+            background-color 1s ease-out,
+            color 1s ease-out,
+            transform 3s ease-out;
+    }
+
+    .buttonElegant {
+        appearance: none;
+
+        width: var(--btn-Cwidth,50%);
+        height: var(--btn-Cheight,50%);
+
+        background-color: var(--btn-background, transparent);
+        color: var(--btn-color, #A8B5D1);
+
+        border: none;
+        border-radius: var(--btn-radius, 70px);
+
+        font-family: Arial, sans-serif;
+        font-size: var(--font-Csize, 0.99rem);
+        font-weight: var(--font-weight, bold);
+        text-align: left;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        padding: 18px 20px;
+
+        cursor: pointer;
+
+        transition:
+            background-color 0.25s ease,
+            color 0.25s ease,
+            transform 0.2s ease;
+    }
+
+    /*  BUTTON HOVERS   */
+    .hoverColor:hover {
+        color: var(--hover-color, var(--color, #000000));
+    }
+
+    .hoverBackgroundColor:hover {
+        background-color: var(--hoverBackground-color, var(--background-color, transparent));
+    }
+
+    /*  BUTTON ACTIVE   */
+    .ActiveScale:active {
+        transform: scale(var(--scale-to, 0));
+    }
+
+    /*  [[[     SELECTS     ]]]*/
+    .selectText {
+        appearance: none;
+
+        height: var(--Cheight, 100px);
+        width: var(--Cwidth, 50px);
+        max-width: 100%;
+        max-height: 100%;
+
+        background-image: url("Arrow.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-color: var(--background-color, transparent);
+        color: var(--color, #000000);
+
+        font-family: Arial, sans-serif;
+        font-size: var(--font-size, 1rem);
+        font-weight: normal;
+
+        border: none;
+        text-align: center;
+    }
+
+    .selectBorderLines {
+        appearance: none;
+
+        height: calc(var(--Cheight, 100px) / 2);
+        width: calc(var(--Cwidth, 50px) * 2);
+        max-width: 100%;
+        max-height: 100%;
+
+        background-color: var(--background-color, transparent);
+        color: var(--color, #000000);
+
+        border-width: var(--border-width, 2px 2px 2px 2px);
+        border-style: var(--border-style, solid);
+        border-color: var(--border-color, #000000);
+        border-radius: var(--border-radius, 5%);
+
+        font-family: Arial, sans-serif;
+        font-size: var(--font-size, 1rem);
+        font-weight: normal;
+
+        text-align: center;
+    }
+
+    .selectElegant {
+        appearance: none;
+
+        width: var(--select-Cwidth,50%);
+        height: var(--select-Cwidth,50%);
+
+        background-image: url("ArrowDownWhite.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-color: var(--btn-background, transparent);
+        color: var(--btn-color, #A8B5D1);
+
+        border-color: #ffffff;
+        border-radius: var(--btn-radius, 70px);
+
+        font-family: Arial, sans-serif;
+        font-size: var(--font-Csize, 0.99rem);
+        font-weight: var(--font-weight, bold);
+        text-align: left;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        padding: 18px 20px;
+
+        cursor: pointer;
+
+        transition:
+            background-color 0.25s ease,
+            color 0.25s ease,
+            transform 0.2s ease;
+    }
+
+    /*  [[[     TEXTS       ]]]*/
+    .textText {
+        appearance: none;
+
+        width: var(--Cwidth, 100%);
+        height: var(--Cheight, 50%);
+        resize: none;
+
+        background-color: var(--background-color, transparent);
+        color: var(--color, #000000);
+
+        font-family: Arial, sans-serif;
+        font-size: var(--font-size, 1rem);
+        font-weight: normal;
+
+        border: none;
+        text-align: center;
+    }
+
+    /*  [[[     DIVS        ]]]*/
+    .div {
+        display: flex;
+        flex-direction: var(--div-Cdirection, column);
+        flex-wrap: var(--div-wrap, wrap);
+
+        width: var(--div-Cwidth, 200px);
+        height: var(--div-Cheight, auto); 
+
+        align-items: var(--div-alignItems, center);
+        justify-content: var(--div-justifyContent, none);
+
+        overflow-y: var(--Coverflow-y, hidden);
+        overflow-x: hidden;
+    }
+
+    /*  [[[     TABLES      ]]]*/
+    .tableStyle01 {
+        width: var(--table-width, 100%);
+        height: var(--table-height, 100%);
+
+        table-layout: fixed;
+
+        border: var(--border, 1px solid black);
+        border-collapse: collapse;
+        border-spacing: 0;
+        background-color: var(--background-color, transparent);
+
+        font-family: Arial;
+    }
+
+    .tableStyle01 th {
+        width: calc(100% / var(--columns, 1));
+        background-color: var(--th-background-color, --background-color);
+        color: blueviolet;
+
+        border: var(--th-border, var(--border, 1px solid black));
+        border-left: none;
+        border-right: none;
+
+        padding: var(--th-padding, var(--padding, none));
+
+        font-family: Courier;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .tableStyle01 td {
+        background-color: var(--td-background-color, --background-color);
+        color: var(--color, black);
+
+        border: var(--td-border, var(--border, 1px solid black));
+
+        padding: var(--td-padding, var(--padding, none));
+
+        font-family: monospace;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    /*  [[[     TEXT CLASSES      ]]]*/
+    .textNeon {
+        text-shadow: 0px 0px 1px var(--neon-color, black);
+    }
+
+    .shadow {
+        box-shadow: var(--shadow, 0px 5px 5px rgba(0, 0, 0, 0.5));
+    }
+}
+
+.movingColors {
+    background: linear-gradient(90deg, #555555, #adadad, #939493, #525252);
+    background-size: 200% 100%;
+    background-repeat: repeat;
+    animation: moveRight 5s linear infinite;
+}
+
+@keyframes moveRight {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 200% 0%;
+    }
+}

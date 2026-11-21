@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../MainFolder/mainCss.css">
+    <script src="UpperSecondaryJs.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body style="background-color: #020627;">
+    <main class="div" style="width: 100%; height: 100%; align-items: normal;">
+        <!-- Crear botones de materias (Hecho asi de agilizado por hackaton)-->
+        <section class="div" style="--div-width:20%; --div-height: 100%; --div-Cwidth: 100%; --div-Cheight: 20%; 
+        border-right: 2px solid #ffffff; border-bottom: 2px solid #ffffff;">
+            <button class="buttonElegant" style="--btn-width: 80%; --btn-height: 5%;" onclick="searchDocumentation('Ecuaciones')">Ecuaciones</button>
+            <button class="buttonElegant" style="--btn-width: 80%; --btn-height: 5%;">Funciones</button>
+            <button class="buttonElegant" style="--btn-width: 80%; --btn-height: 5%;">Limites</button>
+            <button class="buttonElegant" style="--btn-width: 80%; --btn-height: 5%;">Derivadas</button>
+            <button class="buttonElegant" style="--btn-width: 80%; --btn-height: 5%;">Calculo diferencial</button>
+            <button class="buttonElegant" style="--btn-width: 80%; --btn-height: 5%;">Integrales</button>
+            <button class="buttonElegant" style="--btn-width: 80%; --btn-height: 5%;">Calculo integral</button>
+        </section>
+
+        <section class="div" style="--div-width:40%; --div-height: 100%; --div-Cwidth: 100%; --div-Cheight: 30%; 
+        border-right: 2px solid #ffffff; border-bottom: 2px solid #ffffff;">
+            <p id="textDocumentation" style="color: #ffffff; font-size: 1rem; overflow-y: scroll;"></p>
+        </section>
+
+        <iframe main="gameScrollable" style="--iframe-width:40%; --iframe-height: 100%; --iframe-Cwidth: 100%; --iframe-Cheight: 30%" src="Maths/Games/Ecuaciones.html"></iframe>
+    </main>
+</body>
+</html>

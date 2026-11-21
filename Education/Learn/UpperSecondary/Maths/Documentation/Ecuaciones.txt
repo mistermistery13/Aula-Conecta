@@ -1,0 +1,212 @@
+Una ecuación (o igualdad) expresa que dos cantidades o expresiones son
+iguales. Se utilizan ecuaciones en todos los campos que emplean números reales; como ilustración, 
+la ecuación o distancia  (rapidez)(tiempo),
+se usa para resolver problemas que comprenden un cuerpo que se mueve con rapidez constante. 
+
+
+Si la rapidez r es 45 mi/h (millas por hora), 
+entonces la distancia d (en millas) recorrida después del tiempo t (en horas) está dada por
+Por ejemplo, si t  2 h, entonces. Si deseamos hallar
+cuánto tarda el cuerpo en recorrer 75 millas, hacemos d  75 y resolvemos la ecuación o bien, 
+lo que es equivalente, Si dividimos entre 45 ambos lados de la última ecuación, obtenemos
+Por lo tanto, si r  45 mi/h, entonces el tiempo necesario para recorrer 75 millas es horas o sea 1 hora y 40 minutos.
+
+
+Nótese que la ecuación d  rt contiene tres variables: d, r y t. 
+En gran parte de nuestro trabajo en este capítulo consideraremos ecuaciones que contienen sólo una variable. 
+La siguiente tabla aplica a una variable x, pero se puede considerar cualquier otra variable. 
+Las abreviaturas LI y LD de la segunda ilustración representan el lado izquierdo y el lado derecho de la ecuación respectivamente.
+
+
+Una ecuación es una igualdad matemática que establece que dos expresiones tienen el mismo valor.
+
+Su estructura general es:
+\[
+\underbrace{3x+5}_{\text{Primer miembro}}
+=
+\underbrace{20}_{\text{Segundo miembro}}
+\]
+
+En ella encontramos:
+- Incógnita: una cantidad cuyo valor desconocemos. En este caso, \(x\).
+- Coeficiente: el número que multiplica a la incógnita. En este caso, \(3\).
+- Constante: un valor que no contiene incógnitas. En este caso, \(5\) y \(20\).
+- Miembros: las expresiones que están a cada lado del signo igual.
+- Operador de igualdad: establece que ambos miembros tienen el mismo valor.
+La ecuación anterior afirma que tres veces un número, más cinco, es igual a veinte.
+2. Los principios algebraicos que necesitas
+Antes de construir ecuaciones, debemos comprender las herramientas que permiten hacerlo.
+A. Variables e incógnitas
+En álgebra utilizamos letras para representar cantidades.
+
+Por ejemplo:
+\[
+x=5
+\]
+
+La letra \(x\) representa una cantidad cuyo valor es cinco.
+
+Podemos utilizar otras letras:
+\[
+a,\ b,\ c,\ x,\ y,\ z
+\]
+
+Una distinción importante:
+- Una variable puede representar diferentes valores dentro de un contexto.
+- Una incógnita es una cantidad desconocida que queremos determinar mediante una ecuación.
+B. Operaciones algebraicas
+Las operaciones fundamentales son:
+Operación	Representación	Ejemplo
+Suma	\(+\)	\(x+5\)
+Resta	\(-\)	\(x-5\)
+Multiplicación	\(\cdot\)	\(5x\)
+División	\(/\)	\(\frac{x}{5}\)
+Potenciación	\(^{}\)	\(x^2\)
+
+Estas operaciones permiten establecer relaciones entre cantidades.
+
+Por ejemplo:
+- Un número aumentado en cinco: \(x+5\).
+- Un número disminuido en tres: \(x-3\).
+- El triple de un número: \(3x\).
+- La mitad de un número: \(\frac{x}{2}\).
+- El cuadrado de un número: \(x^2\).
+C. Propiedades de las operaciones
+Las propiedades algebraicas permiten transformar expresiones sin alterar su valor.
+
+Las más importantes para comenzar son:
+
+1. Propiedad conmutativa
+
+El orden de los elementos no altera el resultado de la suma o multiplicación.
+\[
+a+b=b+a
+\]
+
+\[
+ab=ba
+\]
+
+2. Propiedad asociativa
+
+La manera de agrupar los elementos no altera el resultado.
+\[
+(a+b)+c=a+(b+c)
+\]
+
+3. Propiedad distributiva
+
+Multiplicar un número por una suma equivale a multiplicarlo por cada término.
+\[
+a(b+c)=ab+ac
+\]
+
+Por ejemplo:
+\[
+3(x+2)=3x+6
+\]
+
+4. Propiedad aditiva de la igualdad
+
+Si sumamos la misma cantidad a ambos miembros, la igualdad se conserva.
+\[
+a=b
+\]
+
+Entonces:
+\[
+a+c=b+c
+\]
+
+5. Propiedad multiplicativa de la igualdad
+
+Si multiplicamos ambos miembros por la misma cantidad, la igualdad se conserva.
+\[
+a=b
+\]
+
+Entonces:
+\[
+ac=bc
+\]
+
+Estas dos últimas propiedades son fundamentales para trabajar con ecuaciones.
+3. ¿Cómo construir una ecuación?
+Ahora vamos a realizar el proceso más importante: pasar de una situación a una expresión algebraica.
+
+Imagina el siguiente problema:
+
+La suma de un número desconocido y ocho es igual a veinte.
+
+Paso 1. Identificar las cantidades.
+
+Tenemos:
+- Un número desconocido.
+- El número ocho.
+- El resultado veinte.
+Paso 2. Representar la incógnita.
+
+Asignamos una letra al número desconocido:
+\[
+x=\text{número desconocido}
+\]
+
+Paso 3. Identificar la relación entre las cantidades.
+
+La palabra «suma» indica una adición:
+\[
+x+8
+\]
+
+La expresión «es igual a veinte» establece una igualdad:
+\[
+x+8=20
+\]
+
+Ecuación construida
+Paso 4. Comprobar la ecuación.
+
+Podemos resolverla utilizando las propiedades de la igualdad:
+\[
+x+8=20
+\]
+
+Restamos ocho en ambos miembros:
+\[
+x+8-8=20-8
+\]
+
+Simplificamos:
+\[
+\boxed{x=12}
+\]
+
+Comprobamos sustituyendo:
+\[
+12+8=20
+\]
+
+La igualdad se cumple.
+4. Un segundo ejemplo: construir una ecuación con multiplicación
+Consideremos esta situación:
+
+El triple de un número disminuido en cuatro unidades es igual a catorce.
+
+Primero debemos interpretar correctamente la relación.
+1. Número desconocido: \(x\).
+2. Triple del número: \(3x\).
+3. Disminuir cuatro unidades: \(3x-4\).
+4. Igual a catorce: \(=14\).
+Por lo tanto:
+\[
+\boxed{3x-4=14}
+\]
+
+Observa cómo hemos construido la ecuación a partir de operaciones y relaciones.
+
+Una advertencia importante: el lenguaje natural puede ser ambiguo. Por ejemplo, «el triple de un número disminuido en cuatro» puede interpretarse de distintas maneras según el contexto. Si queremos decir que primero disminuimos cuatro y después multiplicamos por tres, debemos escribir explícitamente:
+\[
+3(x-4)=14
+\]
+
+Los paréntesis determinan cómo se agrupan las operaciones.

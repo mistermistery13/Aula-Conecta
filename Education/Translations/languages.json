@@ -1,0 +1,64 @@
+{
+    "en": {
+        "Menu.title": "MAIN MENU",
+        "name.web": "Connect Classroom",
+
+        "Home.title": "⌂ Home",
+        "Home.ourGoal": "Our Goal:",
+        "Home.ourGoal.text": "Bring all your study tools together in one place.",
+        "Home.info01.title": "What You'll Find?",
+        "Home.info01.text01": "Find nearby educational institutions",
+        "Home.info01.text02": "Educational content",
+        "Home.info01.text03": "Interactive games",
+        "Home.info02.title": "Find your educational center",
+        "Home.info02.description": "Locations of the largest number of educational centers of all levels in the city and their respective information will be displayed.",
+        "Home.info03.title": "Educational content",
+        "Home.info03.description": "You will find syllabi according to the education level and subject of interest.",
+        "Home.info04.title": "Interactive games",
+        "Home.info04.description": "Basic concepts through games that promote ideas.",
+
+        "Sub.title": "CLASSROOM CONNECTS LEARN · GROW · SHARE",
+        "Learn.title": "✦ Learn",
+        "Explore.title": "⌖ Explore",
+        "Share.title": "☷ Share",
+
+        "LevelPicker.option01": "Basic",
+        "LevelPicker.option02": "Primary",
+        "LevelPicker.option03": "Secondary",
+        "LevelPicker.option04": "High School",
+        "LevelPicker.option05": "Higher Education",
+        "LevelPicker.subject": "Subject",
+        "LevelPicker.subject.mathematics": "Mathematics"
+    },
+    "es": {
+        "Menu.title": "MENÚ PRINCIPAL",
+        "name.web": "Aula Conecta",
+
+        "Home.title": "⌂ Inicio",
+        "Home.ourGoal": "Nuestro objetivo:",
+        "Home.ourGoal.text": "Reúne todas tus herramientas de estudio en un solo lugar.",
+        "Home.info01.title": "¿Qué encontrarás?",
+        "Home.info01.text01": "Buscar centros educativos cercanos",
+        "Home.info01.text02": "Contenido educativo",
+        "Home.info01.text03": "Juegos interactivos",
+        "Home.info02.title": "Encontrar tu centro educativo",
+        "Home.info02.description": "Se mostrarán las ubicaciones de la mayor cantidad de centros educativos de todos los niveles en la ciudad y su respectiva información.",
+        "Home.info03.title": "Contenido educativo",
+        "Home.info03.description": "Encontrarás temarios acorde al nivel educativo y la materia de interés.",
+        "Home.info04.title": "Juegos interactivos",
+        "Home.info04.description": "Conceptos básicos a través de juegos que promueven las ideas.",
+        "Sub.title": "AULA CONECTA APRENDE · CRECE · COMPARTE",
+
+        "Learn.title": "✦ Aprende",
+        "Explore.title": "⌖ Explora",
+        "Share.title": "☷ Comparte",
+
+        "LevelPicker.option01": "Básica",
+        "LevelPicker.option02": "Primaria",
+        "LevelPicker.option03": "Secundaria",
+        "LevelPicker.option04": "Medio Superior",
+        "LevelPicker.option05": "Superior",
+        "LevelPicker.subject": "Materia",
+        "LevelPicker.subject.mathematics": "Matematicas"
+    }
+}

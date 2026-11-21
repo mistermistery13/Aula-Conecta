@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Conecta</title>
+    <link rel="icon" type="image/png" href="Sources/LogoPrototipe.png">
+    <link rel="stylesheet" href="MainFolder/mainCss.css">
+    <script src="Translations/languages.js" defer></script>
+</head>
+<body style="width: 100vw; height: 100vh">  
+    <main class="div" style="width: 100%; height: 100%; flex-direction: row;">
+        <!-- Menu del lado izquierdo -->
+        <section class="div" style="--div-width: 20%; --div-height: 100%; 
+        --div-Cwidth: 100%; --div-Cheight: 20%; --div-Cdirection: row; background-color: #020734;">
+            <div class="div" style="width: 100%; height: 15%;">
+                <h4 style="width: 50%; height: 25%; font-family: 'Gill Sans', Calibri, sans-serif; font-size: 0.5 rem; 
+                font-weight: 800; color: #a59b9b; text-align: center;" data-language="Menu.title"> 
+                    MENÚ PRINCIPAL 
+                </h4> 
+                <h4 class="textNeon" style="width: 75%; height: 50%; font-weight: 800; color: #f5f5f5; --neon-color: #f5f5f5; 
+                font-size: 1rem; text-align: left; width: 45%; height: 15%;" data-language="Sub.title"> 
+                    AULA CONECTA APRENDE · CRECE · COMPARTE 
+                </h4>
+            </div>  
+
+            <!-- Botones del menu -->
+            <a href="Home/index.html" target="MainScrollable"style="width: 45%; height: 15%;"> 
+                <button id="btnInicio" class="buttonElegant" style="width: 100%; height: 100% ;" data-language="Home.title"> 
+                    ⌂ Inicio
+                </button>
+            </a> 
+            <a href="Learn/index.html" target="MainScrollable" style="width: 45%; height: 15%;"> 
+                <button id="btnInicio" class="buttonElegant"  style="width: 100%; height: 100% ;" data-language="Learn.title">
+                    ✦ Aprende
+                </button>
+            </a>
+            <a href="Explore/index.html" target="MainScrollable" style="width: 45%; height: 15%;"> 
+                <button id="btnInicio" class="buttonElegant" style="width: 100%; height: 100% ;" data-language="Explore.title"> 
+                    ⌖ Explora
+                </button>
+            </a>
+            <a href="Share/index.html" target="MainScrollable" style="width: 45%; height: 15%;"> 
+                <button id="btnInicio" class="buttonElegant" style="width: 100%; height: 100% ;" data-language="Share.title"> 
+                    ☷ Comparte
+                </button>   
+            </a>
+
+            <!-- Selector de idioma -->
+            <select id="selLanguage" class="selectElegant" style="--select-width: 50%; --select-height: 15%; 
+            --select-Cwidth: 50%; --select-Cheight: 15%; text-align: center;">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+        </section> 
+
+        <!-- iframe para las otras paginas html -->
+       <iframe name="MainScrollable" style="background-color: #020734; --iframe-width: 80%; --iframe-height: 100%;
+       --iframe-Cwidth: 100%; --iframe-Cheight: 100%;" src="Home/index.html"></iframe>
+    </main>
+</body>
+</html>

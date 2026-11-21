@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../MainFolder/mainCss.css">
+    <script src="explore.js" defer></script>
+</head>
+<body class="div" style="width: 100%; height: 100vh;">
+    <section style="width: 100%; height: 40%; display: flex; justify-content: center; padding: 8px; box-sizing: border-box;">
+
+        <div style="width: 100%; height: 100%;display: flex; justify-content: center;">
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7439.527291304693!2d-86.8250200535283!3d21.20154617331177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2c298cab405b%3A0xc7ce34485e9b3b8!2sUniversidad%20del%20Caribe!5e0!3m2!1ses!2smx!4v1795229391102!5m2!1ses!2smx" style="border:0; width: 70%; height: 100%; justify-items: center;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        </div>
+        
+        
+    </section>
+    
+    <section style="width: 100%; height: 60%; display: flex; flex-direction: column;align-items: center; gap: 10px; color: white ;">
+        <h2>instituciones educativas</h2>
+        <div style="width: 90%; display:flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+            <button id = "unicar" onclick="swichear('unicar')">Universidad Del Caribe</button>
+            <button id = "TecNM" onclick="swichear('TecNM')">Instituto Tecnologico de Cancún</button>
+
+        </div>
+        
+    </section>
+    
+</body>
+</html>
